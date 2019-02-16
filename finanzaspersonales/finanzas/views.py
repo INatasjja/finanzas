@@ -33,7 +33,7 @@ def Usuarios(request):
 def egresos(request):
     contenido = models.TipoEgresos.objects.all()
     template = 'finanzas/tlistado.html'
-    context = {'contenido': contenido,'titulo':models.TipoEgresos,'tipot':'e'}
+    context = {'contenido': contenido,'titulo':models.TipoEgresos,'tipot':'e','tipot':'e'}
     return render(request, template, context)
 
 def ingresos(request):
