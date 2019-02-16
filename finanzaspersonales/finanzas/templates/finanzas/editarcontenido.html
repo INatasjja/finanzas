@@ -13,6 +13,11 @@
                <div class="form-group">
                       <label for="exampleInputName1">{{form.estado.label}}</label>
                                       {{ form.estado }}
+<select>
+  <option value="A" id="{{ form.estado }}">Activo</option>
+  <option value="I" id="{{ form.estado }}">Inactivo</option>
+</select>
+
                </div>
                  <input type="submit" class="btn btn-primary btn-fw" value="Submit" />
                   </form>
