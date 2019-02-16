@@ -9,7 +9,7 @@ class TipoEgresos(models.Model):
     estado = models.CharField(max_length=1, choices=(('A', 'Activo'),('I', 'Inactivo')), blank=True, default='A', help_text='Estado del egreso')
     # Métodos
     def __str__(self):
-        return "{}".format('Tipos de Egresos')
+        return "{}".format(self.descripcion)
 
 
 class TipoIngresos(models.Model):
@@ -18,7 +18,7 @@ class TipoIngresos(models.Model):
     estado = models.CharField(max_length=1, choices=(('A', 'Activo'),('I', 'Inactivo')), blank=True, default='A', help_text='Estado del Ingreso')
     # Métodos
     def __str__(self):
-        return "{}".format('Tipos de Ingresos')
+        return "{}".format(self.descripcion)
 
 
 class RenglonEgresos(models.Model):
@@ -27,7 +27,7 @@ class RenglonEgresos(models.Model):
     estado = models.CharField(max_length=1, choices=(('A', 'Activo'),('I', 'Inactivo')), blank=True, default='A', help_text='Estado del renglon')
     # Métodos
     def __str__(self):
-        return "{}".format('Tipos de Renglones de Egresos')
+        return "{}".format(self.descripcion)
 
 
 class TipoPago(models.Model):
@@ -36,7 +36,7 @@ class TipoPago(models.Model):
     estado = models.CharField(max_length=1, choices=(('A', 'Activo'),('I', 'Inactivo')), blank=True, default='A', help_text='Estado del tipo de pago')
     # Métodos
     def __str__(self):
-        return "{}".format('Tipos de Pago')
+        return "{}".format(self.descripcion)
 
 
 
