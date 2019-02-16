@@ -1,0 +1,87 @@
+{% load static %}
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="profile-image">
+                  <img src="https://s3-us-west-1.amazonaws.com/co-directory-images/iris-natashia-guerrero-rodriguez-5a241735.jpg" alt="profile image">
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Iris Natashia Guerrero</p>
+                  <div>
+                    <small class="designation text-muted">Gerente</small>
+                    <span class="status-indicator online"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="menu-icon mdi mdi-television"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="transacciones">
+              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <span class="menu-title">Transacciones</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="corte">
+              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <span class="menu-title">Corte</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="menu-icon mdi mdi-content-copy"></i>
+              <span class="menu-title">Gestion</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="ingresos/">Ingresos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="egresos/">Egresos</a>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic2">
+              <i class="menu-icon mdi mdi-content-copy"></i>
+              <span class="menu-title">Configuraciones</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic2">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="/tegresos/">Tipo de Egresos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/tingresos/">Tipo de Ingresos</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/trenglones/">Renglon de Egresos</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/tpagos/">Tipo de pago</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/usuarios">
+              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <span class="menu-title">Usuarios</span>
+            </a>
+          </li>
+        </ul>
+      </nav>

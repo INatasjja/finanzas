@@ -1,0 +1,80 @@
+{% extends 'finanzas/base.html' %}
+{% load humanize %}
+{% block content %}
+   <div class="card">
+      <div class="card-body">
+         <h4 class="card-title">Usuarios</h4>
+         <div class="col-sm-6">
+                  <a href="/creausuario" class="btn btn-success"><i class="material-icons"></i> <span>Nuevo</span></a>                 
+               </div>
+         <p class="card-description">
+         </p>
+
+         <div class="table-responsive">
+            <table class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th>
+                        #
+                     </th>
+                     <th>
+                        Nombre
+                     </th>
+                     <th>
+                        Cedula
+                     </th>
+                     <th>
+                        Limite de Egreso
+                     </th>
+                     <th>
+                        Tipo
+                     </th>
+                     <th>
+                        Fecha de corte
+                     </th>
+                     </th>
+                     <th>
+                        Estado
+                     </th>
+                     <th>
+                        Accion
+                     </th>
+                  </tr>
+               </thead>
+               <tbody>
+                  {% for user in listausuarios %}
+                  <tr>
+                     <td>
+                        {{ user.id }}
+                     </td>
+                     <td>
+                        {{ user }}
+                     </td>
+                     <td>
+                        {{ user.cedula }}
+                     </td>
+                     <td>
+                        {{ user.limiteegresos |intcomma}}
+                     </td>
+                     <td>
+                       {{ user.get_tipopersona_display }}
+                     </td>
+                     <td>
+                        {{ user.fechacorte }}
+                     </td>
+                     <td>
+                        {{ user.get_estado_display }}
+                     </td>
+                     <td>
+                            <button type="button" class="btn btn-red">5</button>
+                            <button type="button" class="btn btn-green">6</button>
+                     </td>
+                        
+                  </tr>
+                  {% endfor %}
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+{% endblock %}
