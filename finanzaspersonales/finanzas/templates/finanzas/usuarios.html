@@ -66,8 +66,8 @@
                         {{ user.get_estado_display }}
                      </td>
                      <td>
-                            <button type="button" class="btn btn-red">5</button>
-                            <button type="button" class="btn btn-green">6</button>
+<a class="btn btn-primary btn-sm" href="/edit/{{ user.id }}" role="button">Edit</a>
+<a class="btn btn-danger btn-sm" href="/elim/{{ user.id }}" role="button">Elim</a>
                      </td>
                         
                   </tr>

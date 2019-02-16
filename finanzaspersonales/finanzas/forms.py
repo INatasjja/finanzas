@@ -15,5 +15,5 @@ class UsuarioForm(forms.Form):
 
 
 class EgresoForm(forms.Form):
-    descripcion = forms.CharField(max_length=15,label='Primer Nombre',widget= forms.TextInput(attrs={'class':'form-control','id':'exampleInputName1','placeholder':'Primer Nombre'}))
+    descripcion = forms.CharField(max_length=15,label='Descripcion',widget= forms.TextInput(attrs={'class':'form-control','id':'exampleInputName1','placeholder':'Descripcion'}))
     estado = forms.MultipleChoiceField()
